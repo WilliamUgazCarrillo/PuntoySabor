@@ -55,9 +55,28 @@
     </header>
 
     <div class="container">
-      <h1 class="menu">
-        <img src="/iconos/menu.png" alt="" class="icon-menu" />
-      </h1>
+      <div class="dropdown__container">
+        <button class="dropdown__trigger">
+          Presentación
+           <!-- <img src="/iconos/menu.png" alt="" class="icon-menu" />  -->
+        </button>
+        <div class="dropdown__menu">
+          <a href="entrada.html" class="dropdown__item">Platos de Entrada</a>
+          <a href="carta.html" class="dropdown__item">Platos a la Carta</a>
+          <a href="tragos.html" class="dropdown__item">Bebidas y Licores</a>
+        </div>
+      </div>
+      <script type="text/javascript">
+        const trigger = document.querySelector('.dropdown__trigger');
+        const menu =document.querySelector('.dropdown__menu');
+        trigger.addEventListener('click', () => {
+          if(menu.className.includes('show')){
+            menu.className = menu.className.replace('show', '');
+          } else {
+            menu.className += ' show';
+          }
+        });
+      </script>
 
       <a href="entrada.html" class="entrada">
         <img src="/imagenes/entradas.jpg" class="imgentradas" />
@@ -95,6 +114,5 @@
         </li>
       </ul>
     </div>
-   
   </body>
 </html>

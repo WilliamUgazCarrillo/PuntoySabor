@@ -146,6 +146,45 @@ p {
   background: var(--linkendin);
 }
 
+/* Estilo de lista para el menu de los platos */
+
+.dropdown__container {
+  position: relative;
+}
+.dropdown__trigger {
+  background-color: #f38609;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.9rem 3rem;
+}
+.dropdown__menu {
+  display: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-direction: column;
+  position: absolute;
+  top: 48px;
+  left: 25;
+}
+.dropdown__menu.show {
+  display: flex;
+}
+
+.dropdown__menu > .dropdown__item {
+  padding: 1.0rem 2rem;
+  border-bottom: 1px solid #fcfcfc;
+  text-decoration:none;
+  color: black;
+}
+
+.dropdown__menu > .dropdown__item:last-child {
+  border-bottom: 10;
+  border-color: rgb(red, green, blue);
+}
+
+
+
 @media(max-width:800px){
   div{
     flex-direction: column;
