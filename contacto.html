@@ -38,20 +38,15 @@
     <!-- Se crea la seccion de contactos para Punto y Sabor -->
     <section class="contact-section container-s">
       <form action="https://formspree.io/f/mqkovleq" method="post" class="card">
-       
-        <label class="titulo">Formulario de Registro</label>
-        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre y apellidos"  >
-        <input  class="controls" type="text" name="email" id="email" placeholder="Ingrese su Email"  >
-        <input class="controls" type="text" name="movil" id="movil" placeholder="Ingrese su numero movil"  >
-        <input  class="controls" type="area" name="mensage" id="mensage" placeholder="Dejenos su mensage"  >
+       <h4 class="titulo"> Registro de Contacto</h4>
+          <input class="controls" type="text" name="nombres" required id="nombres" placeholder="Ingrese su nombre y apellidos"  >
+          <input  class="controls" type="email" name="email" required id="email" placeholder="Ingrese su Email"  >
+          <input class="controls" type="number" name="movil" required id="movil" placeholder="Ingrese su numero movil"  >
+          <textarea  class="controls" type="area" name="message" required cols="30" rows="6" id="message" placeholder="Dejenos su mensage" minlength="8" maxlength="300" ></textarea>
         <p><a href="#">Estoy de acuerdo con los terminos y condiciones</p>
-
           <button class="btn_main">
             Enviar Datos
           <i class="gg-arrow-right-o"></i>
-          </button>
-          <button class="btn_limpiar">
-            Limpiar datos
           </button>
         </form>
       </section>
