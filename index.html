@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/estilos/estilos.css" />
+    <link rel="stylesheet" href="/estilos/navegador.css" />
+    <link rel="stylesheet" href="/estilos/pie.css" />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/home-alt.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/album.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/menu.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+
+    <title>Punto y Sabor</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <img
+          class="logo"
+          src="https://i.pinimg.com/564x/76/c4/0d/76c40db2b4ed22011b7b15d271de3dbf.jpg"
+          alt=""
+        />
+        <h1 class="titulo">Punto y Sabor</h1>
+      </a>
+
+      <nav>
+        <a href="#" class="nav-link">
+          <img src="/iconos/work-from-home.png" alt="" />
+          Inicio
+        </a>
+        <a href="nosotros.html" class="nav-link">
+          <img src="/iconos/periodico.png" alt="" />
+          Sobre nosotros
+        </a>
+
+        <a href="contacto.html" class="nav-link">
+          <img src="/iconos/email.png" alt="" />
+          Contacto
+        </a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="dropdown__container">
+        <button class="dropdown__trigger">
+          Presentación
+           <!-- <img src="/iconos/menu.png" alt="" class="icon-menu" />  -->
+        </button>
+        <div class="dropdown__menu">
+          <a href="entrada.html" class="dropdown__item">Platos de Entrada</a>
+          <a href="carta.html" class="dropdown__item">Platos a la Carta</a>
+          <a href="tragos.html" class="dropdown__item">Bebidas y Licores</a>
+        </div>
+      </div>
+      <script type="text/javascript">
+        const trigger = document.querySelector('.dropdown__trigger');
+        const menu =document.querySelector('.dropdown__menu');
+        trigger.addEventListener('click', () => {
+          if(menu.className.includes('show')){
+            menu.className = menu.className.replace('show', '');
+          } else {
+            menu.className += ' show';
+          }
+        });
+      </script>
+
+      <a href="entrada.html" class="entrada">
+        <img src="/imagenes/entradas.jpg" class="imgentradas" />
+        <h2 class="nombre1">Entradas</h2>
+        <p class="texto1">Deliciosas entradas que su paladas degustarà !..</p>
+      </a>
+      <a href="carta.html" class="carta">
+        <img src="/imagenes/carta.jpg" class="imgcarta" />
+        <h2 class="nombre1">Platos a la Carta</h2>
+        <p class="textcarta">Exquisitos platos que Ud. podrà saborear!</p>
+      </a>
+      <a href="tragos.html" class="tragos">
+        <img src="/imagenes/tragos y bebidas.jpg" class="imgtragos" />
+        <h2 class="nombre1">Cocteles y Bebidas</h2>
+        <p class="texttragos">Excelentes tragos y bebidas !</p>
+      </a>
+    </div>
+    <footer class="pie">Desarrollado por TEAM Creator - Copy Right 2023</footer>
+    <div class="redes-container">
+      <ul>
+        <li>
+          <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#" class="tweeter"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+        </li>
+        <li>
+          <a href="#" class="linkendl"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

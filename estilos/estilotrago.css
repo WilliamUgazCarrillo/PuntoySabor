@@ -1,0 +1,23 @@
+.tragos-tit{
+    font-size: 50px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.imagentragos{
+    display: block;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 500px;
+    height: 700px;
+  
+  
+}
+.imagentragos:hover{
+    transform: translateY(10px) scale(1.1);
+    box-shadow: 0px 15px 35px 20px rgb(150,450, 0,10); 
+
+}

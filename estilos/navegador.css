@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: blue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    display: flex ;
+    border-radius: 50%;
+    margin-top: 1px;
+    align-items: center;
+}
+.logo img{
+    height: 120px;
+    margin-right: 30px;
+}
+.titulo {
+  color: red;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: sienna;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    vertical-align:top;
+}
+  nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    color: rgba(255, 190, 10, 0.87);
+    font-size: 25px;
+
+  }
+  nav a:hover{
+    color: white;
+  }
+  @media (max-width:800px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+    div{
+      flex-direction: column;
+      justify-content: center;
+
+    }
+  }

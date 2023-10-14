@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/estilos/estilocontacto.css" />
+    <link rel="stylesheet" href="/estilos/navegador.css" />
+    <link rel="stylesheet" href="/estilos/pie.css" />
+    <title>Punto y Sabor</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img
+          class="logo"
+          src="https://i.pinimg.com/564x/76/c4/0d/76c40db2b4ed22011b7b15d271de3dbf.jpg"
+          alt=""
+        />
+        <h1 class="titulo">Punto y Sabor</h1>
+      </a>
+      <nav>
+        <a href="index.html" class="nav-link">
+          <img src="/iconos/work-from-home.png" alt="" />
+          Inicio
+        </a>
+        <a href="nosotros.html" class="nav-link">
+          <img src="/iconos/periodico.png" alt="" />
+          Sobre nosotros
+        </a>
+
+        <a href="contacto.html" class="nav-link">
+          <img src="/iconos/email.png" alt="" />
+          Contacto
+        </a>
+      </nav>
+    </header>
+    <!-- Se crea la seccion de contactos para Punto y Sabor -->
+    <section class="contact-section container-s">
+      <form action="https://formspree.io/f/mqkovleq" method="post" class="card">
+       <h4 class="titulo"> Registro de Contacto</h4>
+          <input class="controls" type="text" name="nombres" required id="nombres" placeholder="Ingrese su nombre y apellidos"  >
+          <input  class="controls" type="email" name="email" required id="email" placeholder="Ingrese su Email"  >
+          <input class="controls" type="number" name="movil" required id="movil" placeholder="Ingrese su numero movil"  >
+          <textarea  class="controls" type="area" name="message" required cols="30" rows="6" id="message" placeholder="Dejenos su mensage" minlength="8" maxlength="300" ></textarea>
+        <p><a href="#">Estoy de acuerdo con los terminos y condiciones</p>
+          <button class="btn_main">
+            Enviar Datos
+          <i class="gg-arrow-right-o"></i>
+          </button>
+        </form>
+      </section>
+
+<!--         <div>
+          <label class="input-field" for="nombres">
+            Nombre y Apellidos
+            <input type="text" id="nombres"  placeholder="Registrar Nombres y Apellidos completos" />
+          </label>
+          
+          <label class="input-field" for="email">
+            Email
+            <input class="correo" type="email" required id="email"  name="email" placeholder="Registrar email"/>
+          </label>
+          
+          <label class="input-field" for="movil">
+            Movil
+            <input  id="movil"  type="number" placeholder="Digite su numero Movil" />
+          </label>
+          
+          <label class="input-field" for="message">
+            Mensage
+            <textarea
+            class="area"
+            placeholder="Escribir el mensaje para Punto y Sabor"
+            minlength="8"
+            maxlength="300"
+            name="mess"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          </label>
+          
+        </div> -->
+            <footer class="pie">Desarrollado por TEAM Creator - Copy Right 2023</footer>
+  </body>
+</html>

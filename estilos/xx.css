@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+
+}
+::placeholder{
+    color:blue
+}
+::-webkit-input-placeholder{
+    color: rgba(197, 186, 186, 0.911);
+    
+}
+body{
+    margin: 0;
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+}
+.contact-section{
+    margin: 0;
+    font-size: 2rem;
+    padding: 20px 20px;
+    
+
+}
+.input-field{
+    display:block;
+   /* background-color: #43b327; */
+     border:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.875rem;
+    line-height: 2rem;
+    /* width: 100%; */
+    color: royalblue ;
+    padding: 20px;
+}
+.area{
+    background-color:aquamarine;
+    border:solid 1px;
+    padding: 15px;
+    font-family: "Rotobo";
+    font-size: 0.75rem;
+    width: 100%;
+    margin-top: 0.625rem;
+
+}
+.textarea.input-field{
+    width: 100%;
+    background-color: #FFF;
+    font-size: 0.875 rem; /*  14 / 16 =   */
+    margin-top: 0.937rem;  /*  15 / 16 =   */
+    }
+.container{
+    width: min(100%, 69em);
+}
+.container-s{
+    width: min(50%, 33.5em);
+}
+.card{
+    box-shadow: 0px 40px 80px  rgb(0,0,0,0.1);
+    padding: 30px;
+}
+.input-field input{
+    
+    background-color: transparent; 
+    border:none;
+    display: block;
+    
+    font-family: Arial;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    width: 100%;
+    color: #9DAFBD;
+  
+}
+.correo{
+    padding-top: 20px;
+    align-content: center;
+    text-decoration: dashed;
+    
+} 
